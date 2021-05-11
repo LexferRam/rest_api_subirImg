@@ -1,0 +1,16 @@
+luego de ejecutar: npm init -y, ejecutar: npm install typescript -D.
+ejecutar: npx tsc --init
+
+en tsconfig descomentar lo sig: 
+moduleResolution
+"target": "ES2019",
+
+por cada module que se instale se debe instalar el @types, ejemplo:
+express ===> npm i @types/express -D
+
+el comando 'tsc' lee el archivo de configuracion de tsconfig y convierte segun las configuraciones especificadas:
+// "outDir": "./", // "rootDir": "./", ====> es la direccion de entrada y salida del archivo ts a convertir
+
+"build": "tsc" ===> convierte el archivo ts a js, luego hay que ejecutar node dist/index.js
+
+npm i rimraf -D ===> permite ejecutar el comando rm de linux en cualquier sist operativo(para borra una crpeta)
